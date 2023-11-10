@@ -160,5 +160,40 @@ namespace Exercice_SQL
             }
             return listeMaison;
         }
+
+        public ObservableCollection<string> getlisteMaisonProp(string s)
+        {
+            ObservableCollection<string> liste = new ObservableCollection<string>();
+
+            try
+            {
+                MySqlCommand commande = new MySqlCommand("p_get_maison_prop");
+                commande.Connection = con;
+                commande.CommandType = System.Data.CommandType.StoredProcedure;
+
+                commande.Parameters.AddWithValue("@val", s);
+
+                con.Open();
+
+                MySqlDataReader r = commande.ExecuteReader();
+
+                while (r.Read())
+                {
+                    string nom = (string)r["nom"];
+
+                    liste.Add(nom);
+                }
+
+                r.Close();
+                con.Close();
+            }
+            catch (MySqlException ex)
+            {
+                if (con.State == System.Data.ConnectionState.Open)
+                    con.Close();
+
+            }
+            return liste;
+        }
     }
 }
