@@ -224,7 +224,7 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[37];
+            _typeNameTable = new string[38];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -232,38 +232,39 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
             _typeNameTable[4] = "Exercice_SQL.Affichage";
             _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[7] = "Exercice_SQL.Ajouter";
-            _typeNameTable[8] = "Exercice_SQL.AjouterProprio";
-            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.NavigationView";
-            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
-            _typeNameTable[12] = "System.Enum";
-            _typeNameTable[13] = "System.ValueType";
-            _typeNameTable[14] = "String";
-            _typeNameTable[15] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[16] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
-            _typeNameTable[17] = "Double";
-            _typeNameTable[18] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
-            _typeNameTable[20] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[21] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
-            _typeNameTable[22] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
-            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
-            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
-            _typeNameTable[29] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[35] = "Exercice_SQL.MainWindow";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[7] = "Exercice_SQL.AfficherProprio";
+            _typeNameTable[8] = "Exercice_SQL.Ajouter";
+            _typeNameTable[9] = "Exercice_SQL.AjouterProprio";
+            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[12] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
+            _typeNameTable[13] = "System.Enum";
+            _typeNameTable[14] = "System.ValueType";
+            _typeNameTable[15] = "String";
+            _typeNameTable[16] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[18] = "Double";
+            _typeNameTable[19] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
+            _typeNameTable[21] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
+            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[36] = "Exercice_SQL.MainWindow";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.Window";
 
-            _typeTable = new global::System.Type[37];
+            _typeTable = new global::System.Type[38];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -271,36 +272,37 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
             _typeTable[4] = typeof(global::Exercice_SQL.Affichage);
             _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[7] = typeof(global::Exercice_SQL.Ajouter);
-            _typeTable[8] = typeof(global::Exercice_SQL.AjouterProprio);
-            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
-            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
-            _typeTable[12] = typeof(global::System.Enum);
-            _typeTable[13] = typeof(global::System.ValueType);
-            _typeTable[14] = typeof(global::System.String);
-            _typeTable[15] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
-            _typeTable[17] = typeof(global::System.Double);
-            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
-            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
-            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
-            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
-            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
-            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
-            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[35] = typeof(global::Exercice_SQL.MainWindow);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[7] = typeof(global::Exercice_SQL.AfficherProprio);
+            _typeTable[8] = typeof(global::Exercice_SQL.Ajouter);
+            _typeTable[9] = typeof(global::Exercice_SQL.AjouterProprio);
+            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
+            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
+            _typeTable[13] = typeof(global::System.Enum);
+            _typeTable[14] = typeof(global::System.ValueType);
+            _typeTable[15] = typeof(global::System.String);
+            _typeTable[16] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[18] = typeof(global::System.Double);
+            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
+            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
+            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[36] = typeof(global::Exercice_SQL.MainWindow);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Window);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -337,13 +339,14 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
         private object Activate_4_Affichage() { return new global::Exercice_SQL.Affichage(); }
-        private object Activate_7_Ajouter() { return new global::Exercice_SQL.Ajouter(); }
-        private object Activate_8_AjouterProprio() { return new global::Exercice_SQL.AjouterProprio(); }
-        private object Activate_9_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
-        private object Activate_28_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_30_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_33_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_35_MainWindow() { return new global::Exercice_SQL.MainWindow(); }
+        private object Activate_7_AfficherProprio() { return new global::Exercice_SQL.AfficherProprio(); }
+        private object Activate_8_Ajouter() { return new global::Exercice_SQL.Ajouter(); }
+        private object Activate_9_AjouterProprio() { return new global::Exercice_SQL.AjouterProprio(); }
+        private object Activate_10_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
+        private object Activate_29_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
+        private object Activate_31_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_34_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_36_MainWindow() { return new global::Exercice_SQL.MainWindow(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -351,7 +354,7 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_15_IList(object instance, object item)
+        private void VectorAdd_16_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
@@ -403,23 +406,30 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Exercice_SQL.Ajouter
+            case 7:   //  Exercice_SQL.AfficherProprio
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_Ajouter;
+                userType.Activator = Activate_7_AfficherProprio;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Exercice_SQL.AjouterProprio
+            case 8:   //  Exercice_SQL.Ajouter
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_AjouterProprio;
+                userType.Activator = Activate_8_Ajouter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Microsoft.UI.Xaml.Controls.NavigationView
+            case 9:   //  Exercice_SQL.AjouterProprio
+                userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_AjouterProprio;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Microsoft.UI.Xaml.Controls.NavigationView
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_9_NavigationView;
+                userType.Activator = Activate_10_NavigationView;
                 userType.AddMemberName("PaneDisplayMode");
                 userType.AddMemberName("PaneTitle");
                 userType.AddMemberName("MenuItems");
@@ -460,11 +470,11 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  Microsoft.UI.Xaml.Controls.ContentControl
+            case 11:   //  Microsoft.UI.Xaml.Controls.ContentControl
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
+            case 12:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
@@ -474,40 +484,40 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 12:   //  System.Enum
+            case 13:   //  System.Enum
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.ValueType
+            case 14:   //  System.ValueType
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 14:   //  String
+            case 15:   //  String
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 15:   //  System.Collections.Generic.IList`1<Object>
+            case 16:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_15_IList;
+                userType.CollectionAdd = VectorAdd_16_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
+            case 17:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  Double
+            case 18:   //  Double
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  Microsoft.UI.Xaml.UIElement
+            case 19:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
+            case 20:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
@@ -515,11 +525,11 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 20:   //  Microsoft.UI.Xaml.DataTemplate
+            case 21:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
+            case 22:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
@@ -527,33 +537,33 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 22:   //  Microsoft.UI.Xaml.Style
+            case 23:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 23:   //  Microsoft.UI.Xaml.Controls.StyleSelector
+            case 24:   //  Microsoft.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+            case 25:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
+            case 26:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
-            case 26:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
+            case 27:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
+            case 28:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
@@ -561,19 +571,19 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            case 29:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Microsoft.UI.Xaml.DependencyObject
+            case 30:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+            case 31:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_30_NavigationViewItem;
+                userType.Activator = Activate_31_NavigationViewItem;
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("CompactPaneLength");
                 userType.AddMemberName("HasUnrealizedChildren");
@@ -586,34 +596,34 @@ namespace Exercice_SQL.Exercice_SQL_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            case 32:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.IconElement
+            case 33:   //  Microsoft.UI.Xaml.Controls.IconElement
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+            case 34:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Controls.Control
+            case 35:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Exercice_SQL.MainWindow
+            case 36:   //  Exercice_SQL.MainWindow
                 userType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_35_MainWindow;
+                userType.Activator = Activate_36_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Window
+            case 37:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::Exercice_SQL.Exercice_SQL_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

@@ -71,6 +71,7 @@ namespace Exercice_SQL
                 MySqlCommand commande = new MySqlCommand("p_recherche_prop");
                 commande.Connection = con;
                 commande.CommandType = System.Data.CommandType.StoredProcedure;
+                commande.Parameters.AddWithValue("val", s);
 
                 con.Open();
 
