@@ -35,8 +35,9 @@ namespace Exercice_SQL
         {
             try
             {
-                MySqlCommand commande = new MySqlCommand();
-                commande.Connection = con; commande.CommandText = "insert into maison(id, categorie, prix, ville, image, id_proprietaire) values(@id, @categorie, @prix, @ville, @image, @id_proprietaire) ";
+                MySqlCommand commande = new MySqlCommand("p_insert_maison");
+                commande.Connection = con;
+                commande.CommandType = System.Data.CommandType.StoredProcedure;
 
                 commande.Parameters.AddWithValue("@id", id);
                 commande.Parameters.AddWithValue("@categorie", categorie);
@@ -63,22 +64,17 @@ namespace Exercice_SQL
             listeMaison.Clear();
         }
 
-        public Maison position(int p)
-        {
-            Maison a = listeMaison[p];
-
-            return a;
-        }
-
         public ObservableCollection<Maison> getListeRecherche(string s)
         {
             listeMaison.Clear();
 
             try
             {
-                MySqlCommand commande = new MySqlCommand();
+                MySqlCommand commande = new MySqlCommand("p_recherche_maison");
                 commande.Connection = con;
-                commande.CommandText = $"SELECT * FROM maison WHERE categorie REGEXP '.*{s}.*' OR ville REGEXP '.*{s}.*'";
+                commande.CommandType = System.Data.CommandType.StoredProcedure;
+
+                commande.Parameters.AddWithValue("@val", s);
 
                 con.Open();
 
@@ -123,9 +119,9 @@ namespace Exercice_SQL
 
             try
             {
-                MySqlCommand commande = new MySqlCommand();
+                MySqlCommand commande = new MySqlCommand("p_get_maison");
                 commande.Connection = con;
-                commande.CommandText = "SELECT * FROM maison";
+                commande.CommandType = System.Data.CommandType.StoredProcedure;
 
                 con.Open();
 

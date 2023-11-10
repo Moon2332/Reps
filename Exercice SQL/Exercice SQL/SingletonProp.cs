@@ -15,12 +15,12 @@ namespace Exercice_SQL
 
         MySqlConnection con;
 
-        ObservableCollection<Maison> listeProp;
+        ObservableCollection<Proprietaire> listeProp;
 
         public SingletonProp()
         {
             con = new MySqlConnection("Server=cours.cegep3r.info;Database=a2023_420326_gr01_2246072-tony-rayan-moundoubou-ndoping;Uid=2246072;Pwd=2246072;");
-            listeProp = new ObservableCollection<Maison>();
+            listeProp = new ObservableCollection<Proprietaire>();
         }
 
         public static SingletonProp getInstance()
@@ -31,20 +31,20 @@ namespace Exercice_SQL
             return instance;
         }
 
-        public void ajouter(string id, string categorie, string ville, string image, double prix)
+        public void ajouter(string id, string nom, string prenom, string image, double prix)
         {
             try
             {
-                MySqlCommand commande = new MySqlCommand();
-                commande.Connection = con; commande.CommandText = "insert into maison values(@id, @categorie, @prix, @ville, @image) ";
+                MySqlCommand commande = new MySqlCommand("p_insert_prop");
+                commande.Connection = con; 
+                commande.CommandType = System.Data.CommandType.StoredProcedure;
 
                 commande.Parameters.AddWithValue("@id", id);
-                commande.Parameters.AddWithValue("@categorie", categorie);
-                commande.Parameters.AddWithValue("@prix", prix);
-                commande.Parameters.AddWithValue("@ville", ville);
-                commande.Parameters.AddWithValue("@image", image);
+                commande.Parameters.AddWithValue("@nom", nom);
+                commande.Parameters.AddWithValue("@prenom", prenom);
 
                 con.Open();
+
                 commande.Prepare();
                 commande.ExecuteNonQuery();
 
@@ -62,22 +62,15 @@ namespace Exercice_SQL
             listeProp.Clear();
         }
 
-        public Maison position(int p)
-        {
-            Maison a = listeProp[p];
-
-            return a;
-        }
-
-        public ObservableCollection<Maison> getListeRecherche(string s)
+        public ObservableCollection<Proprietaire> getListeRecherche(string s)
         {
             listeProp.Clear();
 
             try
             {
-                MySqlCommand commande = new MySqlCommand();
+                MySqlCommand commande = new MySqlCommand("p_recherche_prop");
                 commande.Connection = con;
-                commande.CommandText = $"SELECT * FROM maison WHERE categorie REGEXP '.*{s}.*' OR ville REGEXP '.*{s}.*'";
+                commande.CommandType = System.Data.CommandType.StoredProcedure;
 
                 con.Open();
 
@@ -85,22 +78,18 @@ namespace Exercice_SQL
 
                 while (r.Read())
                 {
-                    double prix = (double)r["prix"];
                     string id = (string)r["id"];
-                    string ville = (string)r["ville"];
-                    string categorie = (string)r["categorie"];
-                    string image = (string)r["image"];
+                    string nom = (string)r["nom"];
+                    string prenom = (string)r["prenom"];
 
-                    Maison maison = new Maison
+                    Proprietaire prop = new Proprietaire
                     {
                         Id = id,
-                        Ville = ville,
-                        Categorie = categorie,
-                        Prix = prix,
-                        Image = image
+                        Nom = nom,
+                        Prenom = prenom
                     };
 
-                    listeProp.Add(maison);
+                    listeProp.Add(prop);
                 }
 
                 r.Close();
@@ -114,15 +103,15 @@ namespace Exercice_SQL
             return listeProp;
         }
 
-        public ObservableCollection<Maison> getlisteProp()
+        public ObservableCollection<Proprietaire> getlisteProp()
         {
             listeProp.Clear();
 
             try
             {
-                MySqlCommand commande = new MySqlCommand();
+                MySqlCommand commande = new MySqlCommand("p_get_prop");
                 commande.Connection = con;
-                commande.CommandText = "SELECT * FROM maison";
+                commande.CommandType = System.Data.CommandType.StoredProcedure;
 
                 con.Open();
 
@@ -130,22 +119,18 @@ namespace Exercice_SQL
 
                 while (r.Read())
                 {
-                    double prix = (double)r["prix"];
                     string id = (string)r["id"];
-                    string ville = (string)r["ville"];
-                    string categorie = (string)r["categorie"];
-                    string image = (string)r["image"];
+                    string nom = (string)r["nom"];
+                    string prenom = (string)r["prenom"];
 
-                    Maison maison = new Maison
+                    Proprietaire prop = new Proprietaire
                     {
                         Id = id,
-                        Ville = ville,
-                        Categorie = categorie,
-                        Prix = prix,
-                        Image = image
+                        Nom = nom,
+                        Prenom = prenom
                     };
 
-                    listeProp.Add(maison);
+                    listeProp.Add(prop);
                 }
 
                 r.Close();
