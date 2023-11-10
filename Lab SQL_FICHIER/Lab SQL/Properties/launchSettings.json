@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Lab SQL (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Lab SQL (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
