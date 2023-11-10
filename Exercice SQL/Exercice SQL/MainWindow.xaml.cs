@@ -38,7 +38,7 @@ namespace Exercice_SQL
                 case "Ajouter":
                     this.mainFrame.Navigate(typeof(Ajouter));
                     break;
-                case "Maison":
+                case "Maisons":
                     this.mainFrame.Navigate(typeof(Affichage));
                     break;
                 case "AjouterProprio":
