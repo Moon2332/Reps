@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Exercice_SQL.Ajouter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exercice_SQL"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan = "2" Grid.Row="0" HorizontalAlignment="Center">
+            <TextBlock FontSize="50" FontWeight="Bold">
+                Ajouter une maison
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Margin="10" Grid.Row="1" Grid.Column="0">
+            <TextBox x:Name="tbxID" HorizontalAlignment="Stretch" Header="Entrez le ID" FontSize="20"></TextBox>
+
+            <TextBlock x:Name="tblIDErr" Foreground="Red"/>
+        </StackPanel>
+
+        <StackPanel Margin="10" Grid.Row="1" Grid.Column="1">
+            <ComboBox x:Name="CbbxCat"  Header="Choisir la catégorie" FontSize="20" 
+              VerticalAlignment="Top" HorizontalAlignment="Stretch" 
+              SelectedIndex="-1" >
+                <x:String>Condo</x:String>
+                <x:String>Unifamiliale</x:String>
+                <x:String>Jumelé</x:String>
+            </ComboBox>
+            <TextBlock x:Name="tblCatErr" Foreground="Red"/>
+        </StackPanel>
+
+        <StackPanel Margin="10" Grid.Row="2" Grid.Column="0">
+            <TextBox x:Name="tbxPrix" HorizontalAlignment="Stretch" Header="Entrez le prix" FontSize="20"></TextBox>
+
+            <TextBlock x:Name="tblPrixErr" Foreground="Red"/>
+        </StackPanel>
+
+        <StackPanel Margin="10" Grid.Row="2" Grid.Column="1">
+            <TextBox x:Name="tbxVille" HorizontalAlignment="Stretch" Header="Entrez la ville" FontSize="20"></TextBox>
+
+            <TextBlock x:Name="tblVilleErr" Foreground="Red"/>
+        </StackPanel>
+
+        <StackPanel Margin="10" Grid.Row="3" Grid.Column="0">
+            <TextBox x:Name="tbxImg" HorizontalAlignment="Stretch" Header="Entrez la ville" FontSize="20"></TextBox>
+
+            <TextBlock x:Name="tblImgErr" Foreground="Red"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1"> 
+            <Button x:Name="btnAjouter" 
+                Foreground="Black" Background="Gray" FontSize="20" Padding="10"
+                Click="btnAjouter_Click">
+                Ajouter la maison
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
