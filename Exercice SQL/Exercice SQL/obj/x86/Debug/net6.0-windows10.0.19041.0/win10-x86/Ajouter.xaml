@@ -30,41 +30,47 @@
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="1" Grid.Column="0">
-            <TextBox x:ConnectionId='11' x:Name="tbxID" HorizontalAlignment="Stretch" Header="Entrez le ID" FontSize="20"></TextBox>
+            <TextBox x:ConnectionId='13' x:Name="tbxID" HorizontalAlignment="Stretch" Header="Entrez le ID" FontSize="20"></TextBox>
 
-            <TextBlock x:ConnectionId='12' x:Name="tblIDErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='14' x:Name="tblIDErr" Foreground="Red"/>
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="1" Grid.Column="1">
-            <ComboBox x:ConnectionId='9' x:Name="CbbxCat"  Header="Choisir la catégorie" FontSize="20" 
+            <ComboBox x:ConnectionId='11' x:Name="CbbxCat"  Header="Choisir la catégorie" FontSize="20" 
               VerticalAlignment="Top" HorizontalAlignment="Stretch" 
               SelectedIndex="-1" >
                 <x:String>Condo</x:String>
                 <x:String>Unifamiliale</x:String>
                 <x:String>Jumelé</x:String>
             </ComboBox>
-            <TextBlock x:ConnectionId='10' x:Name="tblCatErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='12' x:Name="tblCatErr" Foreground="Red"/>
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="2" Grid.Column="0">
-            <TextBox x:ConnectionId='7' x:Name="tbxPrix" HorizontalAlignment="Stretch" Header="Entrez le prix" FontSize="20"></TextBox>
+            <TextBox x:ConnectionId='9' x:Name="tbxPrix" HorizontalAlignment="Stretch" Header="Entrez le prix" FontSize="20"></TextBox>
 
-            <TextBlock x:ConnectionId='8' x:Name="tblPrixErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='10' x:Name="tblPrixErr" Foreground="Red"/>
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="2" Grid.Column="1">
-            <TextBox x:ConnectionId='5' x:Name="tbxVille" HorizontalAlignment="Stretch" Header="Entrez la ville" FontSize="20"></TextBox>
+            <TextBox x:ConnectionId='7' x:Name="tbxVille" HorizontalAlignment="Stretch" Header="Entrez la ville" FontSize="20"></TextBox>
 
-            <TextBlock x:ConnectionId='6' x:Name="tblVilleErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='8' x:Name="tblVilleErr" Foreground="Red"/>
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="3" Grid.Column="0">
-            <TextBox x:ConnectionId='3' x:Name="tbxImg" HorizontalAlignment="Stretch" Header="Entrez la ville" FontSize="20"></TextBox>
+            <TextBox x:ConnectionId='5' x:Name="tbxImg" HorizontalAlignment="Stretch" Header="Entrez la ville" FontSize="20"></TextBox>
 
-            <TextBlock x:ConnectionId='4' x:Name="tblImgErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='6' x:Name="tblImgErr" Foreground="Red"/>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1"> 
+        <StackPanel Margin="10" Grid.Row="3" Grid.Column="1">
+            <TextBox x:ConnectionId='3' x:Name="tbxIdProprietaire" HorizontalAlignment="Stretch" Header="Entrez le ID du propriétaire" FontSize="20"></TextBox>
+
+            <TextBlock x:ConnectionId='4' x:Name="tblIdProprietaireErr" Foreground="Red"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,35,0,0"> 
             <Button x:ConnectionId='2' x:Name="btnAjouter" 
                 Foreground="Black" Background="Gray" FontSize="20" Padding="10"
                                         >

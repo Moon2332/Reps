@@ -10,40 +10,51 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan = "2" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan = "2" Grid.Row="0" HorizontalAlignment="Center">
             <TextBlock FontSize="50" FontWeight="Bold">
-        Ajouter un propriétaire
+               Ajouter un propriétaire
             </TextBlock>
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="1" Grid.Column="0">
-            <TextBox x:ConnectionId='6' x:Name="tbxID" HorizontalAlignment="Stretch" Header="Entrez le ID" FontSize="20"></TextBox>
+            <TextBox x:ConnectionId='7' x:Name="tbxID" HorizontalAlignment="Stretch" Header="Entrez le ID" FontSize="20"></TextBox>
 
-            <TextBlock x:ConnectionId='7' x:Name="tblIDErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='8' x:Name="tblIDErr" Foreground="Red"/>
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="1" Grid.Column="1">
-            <TextBox x:ConnectionId='4' x:Name="tbxPrenom" HorizontalAlignment="Stretch" Header="Entrez le prénom" FontSize="20"></TextBox>
+            <TextBox x:ConnectionId='5' x:Name="tbxPrenom" HorizontalAlignment="Stretch" Header="Entrez le prénom" FontSize="20"></TextBox>
 
-            <TextBlock x:ConnectionId='5' x:Name="tblPrenomErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='6' x:Name="tblPrenomErr" Foreground="Red"/>
         </StackPanel>
 
         <StackPanel Margin="10" Grid.Row="2" Grid.Column="0">
-            <TextBox x:ConnectionId='2' x:Name="tbxNom" HorizontalAlignment="Stretch" Header="Entrez le nom" FontSize="20"></TextBox>
+            <TextBox x:ConnectionId='3' x:Name="tbxNom" HorizontalAlignment="Stretch" Header="Entrez le nom" FontSize="20"></TextBox>
 
-            <TextBlock x:ConnectionId='3' x:Name="tblNomErr" Foreground="Red"/>
+            <TextBlock x:ConnectionId='4' x:Name="tblNomErr" Foreground="Red"/>
         </StackPanel>
 
+        
+        <StackPanel HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="0,35,0,0">
+            <Button x:ConnectionId='2' x:Name="btnAjouter" 
+               Foreground="Black" Background="Gray" FontSize="20" Padding="10"
+                                       >
+                Ajouter la maison
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>
 
