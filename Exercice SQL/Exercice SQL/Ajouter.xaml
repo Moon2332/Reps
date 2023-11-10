@@ -64,7 +64,13 @@
             <TextBlock x:Name="tblImgErr" Foreground="Red"/>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1"> 
+        <StackPanel Margin="10" Grid.Row="3" Grid.Column="1">
+            <TextBox x:Name="tbxIdProprietaire" HorizontalAlignment="Stretch" Header="Entrez le ID du propriétaire" FontSize="20"></TextBox>
+
+            <TextBlock x:Name="tblIdProprietaireErr" Foreground="Red"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,35,0,0"> 
             <Button x:Name="btnAjouter" 
                 Foreground="Black" Background="Gray" FontSize="20" Padding="10"
                 Click="btnAjouter_Click">

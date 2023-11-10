@@ -14,9 +14,10 @@
                  x:Name="navView"                                            >
                 <NavigationView.MenuItems>
                     <NavigationViewItem x:ConnectionId='3' Content="Page d'acceuil" x:Name="Retour" Icon="Home" FontSize="15"/>
-                    <NavigationViewItem x:ConnectionId='4' Content="Ajouter" x:Name="Ajouter" Icon="Add" FontSize="15"/>
+                    <NavigationViewItem x:ConnectionId='4' Content="Ajouter Maison" x:Name="Ajouter" Icon="Add" FontSize="15"/>
+                    <NavigationViewItem x:ConnectionId='5' Content="Ajouter Propriétaire" x:Name="AjouterProprio" Icon="Add" FontSize="15"/>
                 </NavigationView.MenuItems>
-                <Frame x:ConnectionId='5' x:Name="mainFrame"/>
+                <Frame x:ConnectionId='6' x:Name="mainFrame"/>
             </NavigationView>
         </Grid>
     </ScrollViewer>

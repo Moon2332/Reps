@@ -8,7 +8,7 @@ namespace Exercice_SQL
 {
     internal class Maison
     {
-        private string id, categorie, ville, image;
+        private string id, categorie, ville, image, id_proprietaire;
         private double prix;
         //FAIRE UN CONSTRUCTEUR PAR DÉFAUT ET CHANGER TOUS. FAIRE UNE LISTEVIEW À LA PLACE DE CE QUE J'AI FAIT. LE TOUS DANS UNE PAGE SAUF AJOUTER.
         public Maison()
@@ -18,15 +18,17 @@ namespace Exercice_SQL
             ville = "";
             image = "";
             prix = 0;
+            id_proprietaire = "";
         }
 
-        public Maison(string id, string categorie, string ville, string image, double prix)
+        public Maison(string id, string categorie, string ville, string image, double prix, string id_proprietaire)
         {
             this.id = id;
             this.categorie = categorie;
             this.ville = ville;
             this.image = image;
             this.prix = prix;
+            this.id_proprietaire = id_proprietaire;
         }
 
         public string Id { get => "ID: " + id; set => id = value; }
@@ -35,5 +37,6 @@ namespace Exercice_SQL
         public double Prix { get => prix; set => prix = value; }
         public string PrixString { get => "Prix: " + prix.ToString("C");  }
         public string Image { get => image; set => image = value; }
+        public string Id_proprietaire { get => id_proprietaire; set => id_proprietaire = value; }
     }
 }

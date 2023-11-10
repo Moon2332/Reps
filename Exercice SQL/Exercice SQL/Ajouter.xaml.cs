@@ -38,6 +38,7 @@ namespace Exercice_SQL
             string ville = "";
             string id = "";
             string image = "";
+            string id_proprietaire = "";
             bool valide = true;
 
             try
@@ -49,9 +50,18 @@ namespace Exercice_SQL
                 }
                 else
                 {
-                    tblIDErr.Text = "";
-                    id = tbxID.Text;
+                    if (tbxID.Text.Length > 10)
+                    {
+                        tblIDErr.Text = "L'ID ne peut pas dépasser 10 caractères";
+                        valide = false;
+                    }
+                    else
+                    {
+                        tblIDErr.Text = "";
+                        id = tbxID.Text;
+                    }
                 }
+                
                 if (tbxImg.Text == "")
                 {
                     tblImgErr.Text = "Veuillez entrer un URL SVP";
@@ -69,15 +79,24 @@ namespace Exercice_SQL
                 }
                 else
                 {
-                    if (double.TryParse(tbxPrix.Text, out prix) == true)
+
+                    if (tbxPrix.Text.Length > 9)
                     {
-                        prix = int.Parse(tbxPrix.Text);
-                        tblPrixErr.Text = "";
+                        tblPrixErr.Text = "Le prix ne peut pas dépasser 999999.99$";
+                        valide = false;
                     }
                     else
                     {
-                        tblPrixErr.Text = "Entrez une valeur numérique";
-                        valide = false;
+                        if (double.TryParse(tbxPrix.Text, out prix) == true)
+                        {
+                            prix = int.Parse(tbxPrix.Text);
+                            tblPrixErr.Text = "";
+                        }
+                        else
+                        {
+                            tblPrixErr.Text = "Entrez une valeur numérique";
+                            valide = false;
+                        }
                     }
                 }
                 if (CbbxCat.SelectedIndex < 0)
@@ -97,13 +116,33 @@ namespace Exercice_SQL
                 }
                 else
                 {
-                    tblVilleErr.Text = "";
-                    ville = tbxVille.Text;
+                    if (tbxVille.Text.Length > 50)
+                    {
+                        tblVilleErr.Text = "La ville ne peut pas dépasser 50 caractères";
+                        valide = false;
+                    }
+                    else
+                    {
+                        tblVilleErr.Text = "";
+                        ville = tbxVille.Text;
+                    }
+                }
+                if(tbxIdProprietaire.Text == "")
+                {
+                    tblIdProprietaireErr.Text = "Veuillez entrer l'ID du propriétaire";
+                    valide = false;
+                }
+                else
+                {
+                    if(tbxIdProprietaire.Text.Length > 10)
+                    {
+                        tblIdProprietaireErr.Text = "L'ID du propriétaire ne peut pas dépasser 10 caractères";
+                    }
                 }
 
                 if (valide == true)
                 {
-                    SingletonBD.getInstance().ajouter(id, categorie, ville, image, prix);
+                    SingletonBD.getInstance().ajouter(id, categorie, ville, image, prix, id_proprietaire);
 
                     this.Frame.Navigate(typeof(Affichage));
                 }

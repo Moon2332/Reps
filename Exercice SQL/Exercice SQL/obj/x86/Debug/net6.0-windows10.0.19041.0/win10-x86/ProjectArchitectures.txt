@@ -1,1 +1,1 @@
-C:\Users\2246072\source\repos\Exercice SQL\Exercice SQL\Exercice SQL.csproj;x86
+C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Exercice SQL.csproj;x86

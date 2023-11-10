@@ -41,6 +41,9 @@ namespace Exercice_SQL
                 case "Retour":
                     this.mainFrame.Navigate(typeof(Affichage));
                     break;
+                case "AjouterProprio":
+                    this.mainFrame.Navigate(typeof(AjouterProprio));
+                    break;
             }
 
         }

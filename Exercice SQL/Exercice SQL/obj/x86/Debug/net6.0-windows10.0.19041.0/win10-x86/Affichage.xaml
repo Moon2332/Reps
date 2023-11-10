@@ -25,7 +25,7 @@
                 <GridView.ItemTemplate>
                     <DataTemplate                          >
                         <StackPanel x:ConnectionId='4' Margin="10" BorderBrush="#2E4374" BorderThickness="5" 
-                                    Orientation="Horizontal" Height="200" Width="400">
+                                    Orientation="Horizontal" Height="200" Width="500">
 
                             <Image x:ConnectionId='5'                         Width="200" Margin="5"/>
 

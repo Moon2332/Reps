@@ -31,18 +31,19 @@ namespace Exercice_SQL
             return instance;
         }
 
-        public void ajouter(string id, string categorie, string ville, string image, double prix)
+        public void ajouter(string id, string categorie, string ville, string image, double prix, string id_proprietaire)
         {
             try
             {
                 MySqlCommand commande = new MySqlCommand();
-                commande.Connection = con; commande.CommandText = "insert into maison values(@id, @categorie, @prix, @ville, @image) ";
+                commande.Connection = con; commande.CommandText = "insert into maison(id, categorie, prix, ville, image, id_proprietaire) values(@id, @categorie, @prix, @ville, @image, @id_proprietaire) ";
 
                 commande.Parameters.AddWithValue("@id", id);
                 commande.Parameters.AddWithValue("@categorie", categorie);
                 commande.Parameters.AddWithValue("@prix", prix);
                 commande.Parameters.AddWithValue("@ville", ville);
                 commande.Parameters.AddWithValue("@image", image);
+                commande.Parameters.AddWithValue("@id_proprietaire", id_proprietaire);
 
                 con.Open();
                 commande.Prepare();
@@ -90,6 +91,7 @@ namespace Exercice_SQL
                     string ville = (string)r["ville"];
                     string categorie = (string)r["categorie"];
                     string image = (string)r["image"];
+                    string id_proprietaire = (string)r["id_proprietaire"];
 
                     Maison maison = new Maison
                     {
@@ -97,7 +99,8 @@ namespace Exercice_SQL
                         Ville = ville,
                         Categorie = categorie,
                         Prix = prix,
-                        Image = image
+                        Image = image,
+                        Id_proprietaire = id_proprietaire
                     };
 
                     listeMaison.Add(maison);
@@ -135,6 +138,7 @@ namespace Exercice_SQL
                     string ville = (string)r["ville"];
                     string categorie = (string)r["categorie"];
                     string image = (string)r["image"];
+                    string id_proprietaire = (string)r["id_proprietaire"];
 
                     Maison maison = new Maison
                     {
@@ -142,7 +146,8 @@ namespace Exercice_SQL
                         Ville = ville,
                         Categorie = categorie,
                         Prix = prix,
-                        Image = image
+                        Image = image,
+                        Id_proprietaire = id_proprietaire
                     };
 
                     listeMaison.Add(maison);
