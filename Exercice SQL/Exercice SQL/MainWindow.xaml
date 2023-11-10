@@ -13,7 +13,8 @@
             <NavigationView PaneDisplayMode="Left" PaneTitle="MENU" 
                  x:Name="navView" SelectionChanged="navView_SelectionChanged">
                 <NavigationView.MenuItems>
-                    <NavigationViewItem Content="Page d'acceuil" x:Name="Retour" Icon="Home" FontSize="15"/>
+                    <NavigationViewItem Content="Maisons" x:Name="Retour" Icon="Home" FontSize="15"/>
+                    <NavigationViewItem Content="Propriétaires" x:Name="Proprietaires" Icon="OtherUser" FontSize="15"/>
                     <NavigationViewItem Content="Ajouter Maison" x:Name="Ajouter" Icon="Add" FontSize="15"/>
                     <NavigationViewItem Content="Ajouter Propriétaire" x:Name="AjouterProprio" Icon="Add" FontSize="15"/>
                 </NavigationView.MenuItems>

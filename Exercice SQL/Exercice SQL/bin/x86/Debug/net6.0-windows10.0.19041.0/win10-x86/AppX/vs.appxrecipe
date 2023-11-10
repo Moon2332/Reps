@@ -10,14 +10,14 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>cd47d9d5-7bf2-4c0d-a70c-dd019cf24ed9</PackageIdentityName>
     <PackageIdentityPublisher>CN=2246072</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppX</LayoutDir>
+    <LayoutDir>C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppX</LayoutDir>
     <RegisteredManifestChecksum>509372BC7C49CA1F02C5E17119AC4DE77756292AE33D328D79F6B67523B04F26</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>cd47d9d5-7bf2-4c0d-a70c-dd019cf24ed9_1.0.0.0_x86__hz1jc3hgdc1tp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>cd47d9d5-7bf2-4c0d-a70c-dd019cf24ed9_hz1jc3hgdc1tp!App</RegisteredUserModeAppID>
@@ -26,32 +26,32 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-10T18:25:57.989</Modified>
+      <Modified>2023-11-10T19:17:36.513</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\resources.pri">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-10T18:25:57.660</Modified>
+      <Modified>2023-11-10T19:17:36.256</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Exercice SQL.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Exercice SQL.runtimeconfig.json">
       <PackagePath>Exercice SQL.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-10T17:42:49.919</Modified>
+      <Modified>2023-11-10T19:01:33.784</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Exercice SQL.dll">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Exercice SQL.dll">
       <PackagePath>Exercice SQL.dll</PackagePath>
-      <Modified>2023-11-10T18:25:57.410</Modified>
+      <Modified>2023-11-10T19:17:36.151</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\apphost.exe">
       <PackagePath>Exercice SQL.exe</PackagePath>
-      <Modified>2023-11-10T18:25:57.430</Modified>
+      <Modified>2023-11-10T19:17:36.158</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Exercice SQL.deps.json">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Exercice SQL.deps.json">
       <PackagePath>Exercice SQL.deps.json</PackagePath>
-      <Modified>2023-11-10T17:48:52.004</Modified>
+      <Modified>2023-11-10T19:15:37.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\2270432\.nuget\packages\microsoft.netcore.app.runtime.win-x86\6.0.23\runtimes\win-x86\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1073,33 +1073,33 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2023-04-28T12:59:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-11-10T17:41:56.473</Modified>
+      <Modified>2023-11-10T18:59:35.350</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-11-10T17:41:56.473</Modified>
+      <Modified>2023-11-10T18:59:35.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2023-11-10T17:41:56.474</Modified>
+      <Modified>2023-11-10T18:59:35.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2023-11-10T17:41:56.474</Modified>
+      <Modified>2023-11-10T18:59:35.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2023-11-10T17:41:56.474</Modified>
+      <Modified>2023-11-10T18:59:35.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2023-11-10T17:41:56.475</Modified>
+      <Modified>2023-11-10T18:59:35.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\2270432\Documents\ProjetsVS\Repos\Exercice SQL\Exercice SQL\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\2270432\Source\Repos\Reps\Exercice SQL\Exercice SQL\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2023-11-10T17:41:56.475</Modified>
+      <Modified>2023-11-10T18:59:35.353</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
